@@ -1,3 +1,11 @@
+[Japanese Recipe Site Mock Project]
+An in-progress Japanese themed recipe list using REST API.
+
+
+________________________________________________________________
+
+
+
 This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
 ## Getting Started
