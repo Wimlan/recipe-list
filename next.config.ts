@@ -1,7 +1,17 @@
+// next.config.ts
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
-  /* config options here */
+  images: {
+    remotePatterns: [
+      {
+        protocol: "https",
+        hostname: "www.themealdb.com",
+        // pathname: '/images/media/meals/**', // Valfritt
+      },
+    ],
+  },
+  // Lägg till andra Next.js inställningar här om du har några
 };
 
-export default nextConfig;
+export default nextConfig; // Använd export default istället för module.exports

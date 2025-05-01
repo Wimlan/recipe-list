@@ -1,17 +1,19 @@
 import Recommended from "./recommended";
 import RecipeList from "./recipelist";
-import "bootstrap/dist/css/bootstrap.min.css"; // <-- This line should be here
-
-fetch("https://www.themealdb.com/api/json/v1/1/filter.php?a=Japanese")
-  .then((res) => res.json())
-  .then(console.log);
+import Container from "react-bootstrap/Container";
 
 function Page() {
   return (
     <>
-      <h1>hello</h1>
-      <Recommended></Recommended>
-      <RecipeList></RecipeList>
+      <Container className="bg-white">
+        <h2 className="text-right p-6 display-1">
+          Japanese
+          <br />
+          Recipes
+        </h2>
+        <Recommended></Recommended>
+        <RecipeList></RecipeList>
+      </Container>
     </>
   );
 }
